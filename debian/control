@@ -1,15 +1,25 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-areyoulazy-libhosty
+Section: golang
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Reinhard Tartler <siretart@tauware.de>
+Rules-Requires-Root: no
+Build-Depends: debhelper-compat (= 13),
+               dh-sequence-golang,
+               golang-any,
+               golang-golang-x-exp-dev
+Testsuite: autopkgtest-pkg-go
+Standards-Version: 4.7.0
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-areyoulazy-libhosty
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-areyoulazy-libhosty.git
+Homepage: https://github.com/areYouLazy/libhosty
+XS-Go-Import-Path: github.com/areYouLazy/libhosty
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-areyoulazy-libhosty-dev
+Architecture: all
+Multi-Arch: foreign
+Depends: golang-golang-x-exp-dev,
+         ${misc:Depends}
+Description: Golang library to manage /etc/hosts files (library)
+ libhosty is a pure golang library to manipulate hosts-like files. It is
+ inspired by txeh (https://github.com/txn2/txeh), with some enrichments.

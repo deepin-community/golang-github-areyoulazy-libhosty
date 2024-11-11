@@ -1,5 +1,11 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-areyoulazy-libhosty (1.1.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Reupload to aid testing migration
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 05 Nov 2024 20:26:32 -0500
+
+golang-github-areyoulazy-libhosty (1.1.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1086331)
+
+ -- Reinhard Tartler <siretart@tauware.de>  Tue, 29 Oct 2024 17:10:11 -0400
